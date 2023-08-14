@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">TODO's List</h2>
+
+        <div class="title">
+            <label for="title" class="form-label">Title:</label>
+            <input type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Add an item to the list">
+        </div>
+        <div class="description">
+            <label for="exampleFormControlTextarea1">Description:</label>
+            <textarea class="form-des" id="description" rows="3" placeholder="Descrive Your Task Here"></textarea>
+        </div>
+        <div class = "button">
+        <button type="button" id="add" class="btn">Add to List</button>
+        <button type="button" id="clear" class="btn" onclick="clearStorage()">Clear List</button>
+        </div>
+
+        <div id="Items" class="item">
+            <h2>Your Items:</h2>
+            <table class="table">
+                <thead id="tableHead">
+                    <tr>
+                        <th class="tableHead" col">Serial NO.</th>
+                        <th class="tableHead" col">Item Title</th>
+                        <th class="tableHead" col">Item Description</th>
+                        <th class="tableHead" col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Get some coffee</td>
+                        <td>You need coffee as you are a coder</td>
+                        <td><button class="btn">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
