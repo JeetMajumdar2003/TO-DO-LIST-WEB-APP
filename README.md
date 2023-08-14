@@ -18,7 +18,3 @@ This is a todo's list website that allows you to add, delete, all delete your TO
 4. Commit your changes
 5. Push to the branch
 6. Create a pull request
-
-### License
-
-MIT License
